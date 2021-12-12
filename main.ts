@@ -1,7 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    basic.showNumber(receivedNumber)
-    basic.pause(100)
-    basic.showString("PUNTEN")
+    basic.showString("PUNTEN ZIJN TOEGEVOEGD!")
     serial.writeLine("" + (receivedNumber))
 })
 radio.setGroup(125)
